@@ -1,0 +1,60 @@
+body{
+height: 200vh;
+// display: flex;
+// align-items: center;
+// justify-content: center;
+// background-color: royalblue;
+.image{
+    // border: 10px dotted black;
+    border-left: 10px solid red;
+    border-top: 5px dashed rgb(0, 255, 123);
+    border-right: 10px dotted rgb(20, 255, 31);
+    border-bottom: 10px solid rgb(232, 0, 240);
+    background-image: url('../antaresRocet.jpg');
+    background-size: cover;
+    // background-repeat: no-repeat;
+    background-attachment: fixed;
+    width: 90%;
+    height: 400px;
+}
+.box{
+    width: 100px;
+    height: 100px;
+    background-color: black;
+    // transform: rotate(20deg);
+
+    // transform: translateX(-100px);
+    // transform: translateY(100px);
+    // transform: translate(90px,100px);
+
+    // transform: scaleX(3);
+    // transform: scaleY(3);
+    // transform: scale(2,3);
+
+    // transform: skewY(20deg);
+    // transform: skewX(20deg);
+    // transform: skew(20deg, 150deg);
+    // box-shadow: 5px 10px rgba($color: #000000, $alpha: .5);
+
+    // matrix(scaleX(),skewY(),skewX(),scaleY(),translateX(),translateY())
+    transform: matrix(1, -0.3, 0, 1, 0, 0);
+    // transition: 1s;
+    // transition-delay: 3s;
+    // transition-property: width;
+    transition: width 2s,height 3s;
+// transition-delay
+// transition-duration
+// transition-property
+// transition-timing-function
+&:hover{
+// #div1 {transition-timing-function: linear;}
+// #div2 {transition-timing-function: ease;}
+// #div3 {transition-timing-function: ease-in;}
+// #div4 {transition-timing-function: ease-out;}
+// #div5 {transition-timing-function: ease-in-out;}
+    background-color: red;
+    width: 200px;
+    height: 200px;
+}
+}
+}

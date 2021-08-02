@@ -1,0 +1,32 @@
+body {
+  height: 200vh;
+}
+
+body .image {
+  border-left: 10px solid red;
+  border-top: 5px dashed #00ff7b;
+  border-right: 10px dotted #14ff1f;
+  border-bottom: 10px solid #e800f0;
+  background-image: url("../antaresRocet.jpg");
+  background-size: cover;
+  background-attachment: fixed;
+  width: 90%;
+  height: 400px;
+}
+
+body .box {
+  width: 100px;
+  height: 100px;
+  background-color: black;
+  -webkit-transform: matrix(1, -0.3, 0, 1, 0, 0);
+          transform: matrix(1, -0.3, 0, 1, 0, 0);
+  -webkit-transition: width 2s,height 3s;
+  transition: width 2s,height 3s;
+}
+
+body .box:hover {
+  background-color: red;
+  width: 200px;
+  height: 200px;
+}
+/*# sourceMappingURL=style.css.map */
