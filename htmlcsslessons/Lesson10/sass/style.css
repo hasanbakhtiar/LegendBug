@@ -1,0 +1,21 @@
+.container {
+  width: 100%;
+  height: 100vh;
+  background-color: black;
+}
+
+.container .box {
+  width: 100px;
+  height: 100px;
+  background-color: green;
+}
+
+@media only screen and (min-width: 600px) {
+  .container {
+    background-color: indigo;
+  }
+  .container .box {
+    background-color: lawngreen;
+  }
+}
+/*# sourceMappingURL=style.css.map */

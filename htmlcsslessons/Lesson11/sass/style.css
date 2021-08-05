@@ -1,0 +1,71 @@
+.box {
+  width: 100px;
+  height: 100px;
+  background-color: red;
+  -webkit-animation: animate 0s infinite;
+          animation: animate 0s infinite;
+}
+
+@-webkit-keyframes animate {
+  0% {
+    background-color: red;
+    left: 0px;
+    top: 0px;
+  }
+  25% {
+    background-color: #00fd4c;
+    left: 300px;
+    top: 0px;
+  }
+  50% {
+    background-color: #ff00d4;
+    left: 300px;
+    top: 300px;
+  }
+  75% {
+    background-color: #9900ff;
+    left: 0px;
+    top: 300px;
+  }
+  100% {
+    background-color: red;
+    left: 0px;
+    top: 0px;
+  }
+}
+
+@keyframes animate {
+  0% {
+    background-color: red;
+    left: 0px;
+    top: 0px;
+  }
+  25% {
+    background-color: #00fd4c;
+    left: 300px;
+    top: 0px;
+  }
+  50% {
+    background-color: #ff00d4;
+    left: 300px;
+    top: 300px;
+  }
+  75% {
+    background-color: #9900ff;
+    left: 0px;
+    top: 300px;
+  }
+  100% {
+    background-color: red;
+    left: 0px;
+    top: 0px;
+  }
+}
+
+p:hover::after {
+  display: block;
+  background-color: black;
+  color: white;
+  content: "Front";
+}
+/*# sourceMappingURL=style.css.map */

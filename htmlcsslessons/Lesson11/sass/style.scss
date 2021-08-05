@@ -1,0 +1,51 @@
+.box{
+    // position: absolute;
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    // animation-name: animate;
+    // animation-iteration-count: infinite;
+    // animation-duration: 1s;
+    animation: animate 0s infinite;
+
+
+    @keyframes  animate{
+        0%{background-color: red;left:0px;top:0px}
+        25%{background-color: rgb(0, 253, 76);left:300px;top:0px}
+        50%{background-color: rgb(255, 0, 212);left:300px;top:300px}
+        75%{background-color: rgb(153, 0, 255);left:0px;top:300px}
+        100%{background-color: red;left:0px;top:0px}
+    }
+
+
+    // @keyframes animate {
+    //     from{left:0px}
+    //     to{left:500px}
+    // }
+
+
+
+}
+
+p{
+    // width: 100px;
+    // height: 100px;
+    // background-color: rgb(255, 0, 0);
+ &:hover{
+    &::after{
+        display: block;
+        background-color: black;
+        color: white;
+        content: "Front";
+    }
+ }
+}
+
+
+// p:nth-child(even) {
+//     background: red;
+//   }
+
+// p:nth-child(odd) {
+//     background: red;
+//   }
