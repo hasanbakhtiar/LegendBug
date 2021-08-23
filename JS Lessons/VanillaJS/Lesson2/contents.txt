@@ -1,0 +1,12 @@
+ Primitive (Basic) Data Type
+ 1.String
+ 2.Number
+ 2.Boolean
+
+ Composite Data Type
+ 1.Array
+ 2.Object
+
+ Special Data Type
+ 1.Undefined
+ 2.Null
