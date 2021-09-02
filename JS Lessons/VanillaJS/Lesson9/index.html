@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="sass/style.css">
+</head>
+<body>
+
+    <div class="box"></div>
+
+    <h1 id="test" class="demo">Hello <a class="myLink" href="https://google.com">Google</a></h1>
+    
+<button onclick="changeTag('Front')" ondblclick="returnTag()">Change Tag Value</button>
+    <script>
+document.write(document.querySelector('.myLink').attributes[0].name);
+            let changeTag=(x)=>{
+
+            //Tag Selector
+            // document.getElementsByTagName('h1')[0].innerText = x;
+            // document.querySelector('.demo').innerHTML = x;
+            // document.querySelectorAll('.demo')[0].innerHTML = x;
+            // document.getElementsByClassName('demo')[0].innerHTML = x;
+            // document.getElementById('test').innerHTML = x;
+
+            // attributes Selector
+            // document.querySelector('.myLink').attributes[1].value = "https://github.com";
+            
+            // document.querySelector('.myLink').innerHTML = "Github";
+
+            // CSS 
+            // document.querySelector('.myLink').style.display = "none";
+            // document.querySelector('.myLink').style.background = "green";
+            // document.querySelector('.myLink').style.color = "#fff";
+            // document.querySelector('.box').attributes[0].value = "box1";
+
+
+
+            }
+            let returnTag=()=>{
+            // document.getElementsByTagName('h1')[0].innerHTML = "Hello";
+            document.querySelector('.myLink').style.display = "inline";
+
+            }
+
+    </script>
+
+
+</body>
+</html>

@@ -1,0 +1,14 @@
+.box {
+  width: 100px;
+  height: 100px;
+  background-color: red;
+}
+
+.box1 {
+  -webkit-transition: 1s;
+  transition: 1s;
+  width: 200px;
+  height: 200px;
+  background-color: green;
+}
+/*# sourceMappingURL=style.css.map */
