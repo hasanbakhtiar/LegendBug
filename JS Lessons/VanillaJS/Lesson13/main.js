@@ -1,0 +1,10 @@
+// https://www.w3schools.com/js/js_htmldom_navigation.asp
+// https://www.w3schools.com/js/tryit.asp?filename=tryjs_dom_nav_innerhtml2
+// https://www.w3schools.com/js/tryit.asp?filename=tryjs_dom_nav_innerhtml3
+// https://www.w3schools.com/js/tryit.asp?filename=tryjs_dom_body
+// https://www.w3schools.com/js/tryit.asp?filename=tryjs_dom_document
+// https://www.w3schools.com/js/tryit.asp?filename=tryjs_dom_nav_nodename
+// https://www.w3schools.com/js/tryit.asp?filename=tryjs_dom_elementcreate2
+// https://www.w3schools.com/js/tryit.asp?filename=tryjs_dom_elementremove
+// https://www.w3schools.com/js/js_htmldom_collections.asp
+// https://www.w3schools.com/js/js_htmldom_nodelist.asp
