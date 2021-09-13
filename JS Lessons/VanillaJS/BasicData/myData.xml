@@ -1,0 +1,11 @@
+<Car>
+
+        <Model>Tesla</Model>
+        <Year>2021</Year>
+        <Price>50.000$</Price>
+        <Color>White</Color>
+        <DoorType>4</DoorType>
+        <Engine>V5.0</Engine>
+        <Fuel>Battery</Fuel>
+
+</Car>

@@ -1,0 +1,11 @@
+{
+    "Car":{
+        "Model": "Tesla",
+        "Year": "2021",
+        "Price": "50.000$",
+        "Color": "White",
+        "DoorType": "4",
+        "Engine": "V5.0",
+        "Fuel": "Battery"
+    }
+}
