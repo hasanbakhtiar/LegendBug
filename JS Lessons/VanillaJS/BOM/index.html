@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <a href="index1.html">Index1</a>
+    <button onclick="goBack()">Geri</button>
+    <button onclick="goTo()">Ireli</button>
+
+    <script>
+        let a = window.innerHeight;
+        let b = window.innerWidth;
+        console.log(a);
+        console.log(b);
+
+
+        function goBack() {
+  window.history.back()
+}
+function goTo() {
+  window.history.forward()
+}
+    </script>
+    <script src="mian.js"></script>
+    
+</body>
+</html>
