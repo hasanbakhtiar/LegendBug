@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+</head>
+<body>
+
+
+<div class="container">
+<button>Hello</button>
+<h1 class="myText" style="display: inline-block;">No</h1>
+<span class="myText">Front</span>
+</div>
+
+
+
+
+
+<script >
+
+$(function(){
+  
+  $(".container h1.myText")//nə ilə
+  .mouseleave(function(){ //necə
+
+
+    $(this)//nəyi
+    .css({"background-color": "yellow", "font-size": "200px"}); //nə etsin.
+  
+});
+});
+
+
+
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<hr>
+<p>Hello</p>
+<button>HideandShow</button>
+
+
+
+<script>
+
+$(function(){
+    $("button").click(function(){
+    $("p").toggle();
+    $("p").css({"background-color": "yellow", "font-size": "200px"});
+  });
+})
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- <p>Hello</p>
+    <button onclick="go()">Go</button>
+
+    <script>
+        const go=()=>{
+            document.querySelector('p').innerHTML  = "Bye";
+        }
+    </script> -->
+
+
+
+    <script src="main.js"></script>
+</body>
+</html>
