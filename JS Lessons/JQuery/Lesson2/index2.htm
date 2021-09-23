@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Color Animation Demo</title>
+  <link rel="stylesheet" href="https://code.jquery.com/ui/3.6.0/themes/smoothness/jquery-ui.css">
+  <style>
+  #elem {
+    color: #006;
+    background-color: #aaa;
+    font-size: 25px;
+    padding: 1em;
+    text-align: center;
+  }
+  </style>
+  <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+</head>
+<body>
+ 
+<div id="elem">color animations</div>
+<button id="toggle">animate colors</button>
+ 
+<script>
+$( "#toggle" ).click(function() {
+  $( "#elem" ).animate({
+    backgroundColor: "red",
+
+    left: '250px',
+    opacity: '.5',
+    height: '150px',
+    width: '150px',  
+    color: "green"
+  });
+});
+</script>
+ 
+</body>
+</html>
