@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+</head>
+<body>
+
+<p>This is a paragraph.</p>
+<button>Test jQuery</button>
+<script>
+ const testJQ =  $.noConflict();
+ testJQ(document).ready(function(){
+  testJQ("button").click(function(){
+    testJQ("p").text("jQuery is still working!");
+    });
+  });
+  </script>
+</body>
+</html>
+
+
+
+
+
+<!-- <!DOCTYPE html>
+<html>
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+  $("button").click(function(){
+    $("h1, h2, p").toggleClass("blue");
+  });
+});
+</script>
+<style>
+.blue {
+  color: blue;
+}
+</style>
+</head>
+<body>
+
+<h1>Heading 1</h1>
+<h2>Heading 2</h2>
+
+<p>This is a paragraph.</p>
+<p>This is another paragraph.</p>
+
+<button>Toggle class</button>
+
+</body>
+</html> -->
+
+
+
+<!-- 
+<html>
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+</head>
+<body>
+
+<p id="test1">This is a paragraph.</p>
+<p id="test2">This is another paragraph.</p>
+
+<p>Input field: <input type="text" id="test3" value="testJQ"></p>
+
+<button title="Hello" id="btn1">Set Text</button>
+<button id="btn2">Set HTML</button>
+<button id="btn3">Set Value</button>
+<script>
+  $(document).ready(function(){
+    $("#btn1").click(function(){
+      $("#test1").text("Hello world!");
+    });
+    $("#btn2").click(function(){
+      $("#test2").html("<b>Hello world!</b>");
+    });
+    $("#btn3").click(function(){
+      $("#test3").val("Rena");
+    });
+  });
+  </script>
+</body>
+</html> -->
+
+
+<!-- <html>
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+</head>
+<body>
+
+<p id="test">This is some <b>bold</b> text in a paragraph.</p>
+
+<button id="btn1">Show Text</button>
+<button id="btn2">Show HTML</button>
+<script>
+    $(function(){
+      $("#btn1").click(function(){
+        alert("Text: " + $("#test").text());
+      });
+      $("#btn2").click(function(){
+        alert("HTML: " + $("#test").html());
+      });
+    });
+    </script>
+</body>
+</html> -->
+
+
+<!-- <html>
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script>
+$(function(){
+  $("button").click(function(){
+   document.write($("#test").val()) ;
+  });
+});
+</script>
+</head>
+<body>
+
+<p>Name: <input type="text" id="test" value=""></p>
+
+<button>Show Value</button>
+
+</body>
+</html> -->
+
+
+
