@@ -15,14 +15,44 @@
 
 <button>Get External Content</button>
 
-    <script>
+
+<script>
+  $(function(){
+  $("button").click(function(){
+    $.get("data/test.txt", function(data, status){
+      alert("Data: " + data + "\nStatus: " + status);
+    });
+  });
+});
+</script>
+
+
+
+<!-- <script>
+  $("button").click(function(){
+    
+$("#div1").
+load("data/test.txt", function(responseTxt, statusTxt, xhr){
+if(statusTxt == "success")
+  alert("External content loaded successfully!");
+if(statusTxt == "error")
+  alert("Error: " + xhr.status + ": " + xhr.statusText);
+});
+
+
+});
+</script> -->
+
+
+    <!-- <script>
         $(function(){
   $("button").click(function(){
     $("#div1").load("data/test.txt");
   });
 });
-    </script>
+    </script> -->
 
+    
 
 
 

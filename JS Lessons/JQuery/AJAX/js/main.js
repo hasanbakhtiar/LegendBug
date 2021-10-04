@@ -8,3 +8,5 @@
 //     xhttp.open("GET", "ajax_info.txt", true);
 //     xhttp.send();
 //   }
+
+// https://www.w3schools.com/jquery/jquery_ajax_get_post.asp
