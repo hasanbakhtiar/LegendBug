@@ -1,11 +1,11 @@
 import React from 'react'
-import Product from './Product'
-import Cart from './Cart'
-import Nav from './Nav'
+import Product from '../pages/Product'
+import Cart from '../pages/Cart'
+import Nav from '../Nav'
 import { CartProvider } from 'react-use-cart'
 import { BrowserRouter, Route, Switch } from 'react-router-dom'
 
-const App = () => {
+const AppRouter = () => {
     return (
         <BrowserRouter>
         <Switch>
@@ -19,5 +19,5 @@ const App = () => {
     )
 }
 
-export default App
+export default AppRouter
 

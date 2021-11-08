@@ -1,6 +1,6 @@
 import React from 'react'
 import ProductItem from './ProductItem'
-import data from './data';
+import data from '../data/data';
 
 
 

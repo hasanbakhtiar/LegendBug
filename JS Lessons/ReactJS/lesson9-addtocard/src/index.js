@@ -3,13 +3,13 @@ import ReactDOM from 'react-dom';
 import '../node_modules/bootstrap/dist/css/bootstrap.min.css';
 import '../node_modules/bootstrap/dist/js/bootstrap.bundle';
 import './assets/sass/style.css'
-import App from './components/App'
+import AppRouter from './components/routers/AppRouter'
 
 
 
 
 
-ReactDOM.render(<App />,document.getElementById('root')
+ReactDOM.render(<AppRouter />,document.getElementById('root')
 );
 
 
