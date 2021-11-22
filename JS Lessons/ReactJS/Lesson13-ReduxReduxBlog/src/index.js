@@ -14,15 +14,15 @@ store.subscribe(()=>{
 });
 
 
-const blog1 = store.dispatch(addBlog({title:"b1",description:"desc1"}));
-const blog2 = store.dispatch(addBlog({title:"b2",description:"desc2", dateAdded: Date.now()}));
-const blog3 = store.dispatch(addBlog({title:"b3",description:"desc2", dateAdded: Date.now()}));
-  store.dispatch(addBlog({title:"b2",description:"desc2", dateAdded: Date.now()}));
-store.dispatch(addBlog({title:"b2",description:"desc2", dateAdded: Date.now()}));
+// const blog1 = store.dispatch(addBlog({title:"b1",description:"desc1"}));
+// const blog2 = store.dispatch(addBlog({title:"b2",description:"desc2", dateAdded: Date.now()}));
+// const blog3 = store.dispatch(addBlog({title:"b3",description:"desc2", dateAdded: Date.now()}));
+//   store.dispatch(addBlog({title:"b2",description:"desc2", dateAdded: Date.now()}));
+// store.dispatch(addBlog({title:"b2",description:"desc2", dateAdded: Date.now()}));
 
 
-store.dispatch(removeBlog({id: blog1.blog.id}))
-store.dispatch(editBlog(blog2.blog.id, {title: 'update'}))
+// store.dispatch(removeBlog({id: blog1.blog.id}))
+// store.dispatch(editBlog(blog2.blog.id, {title: 'update'}))
 
 
 

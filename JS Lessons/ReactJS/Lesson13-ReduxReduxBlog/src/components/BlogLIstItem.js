@@ -5,7 +5,7 @@ import { Link } from 'react-router-dom';
 const BlogLIstItem = ({id,title}) => {
     return (
         <>
-            <li >{title}- <Link to={`/blogs/${id}`}>Details</Link></li> 
+            <li >{title}- <Link to={`/blogs/${id}`}>Details </Link><Link to={`edit/${id}`}>Edit</Link></li> 
          
         </>
     )
