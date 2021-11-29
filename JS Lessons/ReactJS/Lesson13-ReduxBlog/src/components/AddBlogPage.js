@@ -1,7 +1,7 @@
 import React from 'react'
 import BlogForm from './BlogForm' 
 import { connect } from 'react-redux';
-import { addBlog } from '../actions/blogs';
+import { addBlogToDatabase } from '../actions/blogs';
 
 const AddBlogPage = (props) => {
     return (
@@ -9,7 +9,7 @@ const AddBlogPage = (props) => {
             <h1>Blog Add</h1>
             <BlogForm onSubmit={
 (blog)=>{
-    props.dispatch(addBlog(blog));
+    props.dispatch(addBlogToDatabase(blog));
     props.history.push('/blogs');
 }
             }/>

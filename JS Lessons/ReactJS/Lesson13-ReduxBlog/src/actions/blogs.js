@@ -1,14 +1,21 @@
-import {v4 as uuid} from 'uuid';
+import database from '../firebase/firebaseConfig'
 // Action creator
-export const addBlog = ({title="" ,description="",dateAdded=0})=>({
+export const addBlog = (blog)=>({
     type: "ADD_BLOG",
-    blog: {
-        id: uuid(),
-        title: title,
-        description: description,
-        dateAdded: dateAdded
-    }
+    blog
 });
+export const addBlogToDatabase =(blogData={})=>{
+return (dispatch)=>{
+    const {title='', description='', dataAdded=0} = blogData;
+    const blog = {title,description,dataAdded};
+    database.ref("blogs").push(blog).then((res)=>{
+        dispatch(addBlog({
+            id:res.key,
+            ...blog
+        }))
+    })
+}
+}
 
 export const removeBlog = ({id})=>(
     {
@@ -22,3 +29,23 @@ type: "EDIT_BLOG",
 id,
 updates
 })
+export const setBlogs =(blogs)=>({
+    type: "SET_BLOGS",
+    blogs
+});
+
+export const getBlogsFromDatabase=()=>{
+    return(dispatch)=>{
+        return database.ref("blogs").once("value").then((snapshot)=>{
+            const blogs =[];
+
+            snapshot.forEach((blog)=>{
+                blogs.push({
+                    id: blog.key,
+                    ...blog.val()
+                })
+            })
+            dispatch(setBlogs(blogs))
+        })
+    }
+}
